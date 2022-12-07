@@ -78,7 +78,7 @@ module.exports.deletarTudo = async (req, res, userId) => {
   try {
     const deletedPeticoes = await PeticoesModel.deletarTudo(userId);
     if (deletedPeticoes.acknowledged) {
-      res.status(200).json({ "mensagem": $`deletados {deletedPeticoes.deletedCount} petições` });
+      res.status(200).json({ "mensagem": `deletados ${deletedPeticoes.deletedCount} petições` });
     }
   } catch (error) {
     res.status(400).json({ "mensagem": "Erro ao deletar a peticao." });

@@ -1,14 +1,14 @@
-@url = http://localhost:3000
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzODQxZDY1NzNlMzY3ZTBlMTdkNjAzMCIsImlhdCI6MTY3MDI3MjM5M30.2iPBZZrbMLy_YVsqCQdgVRmNsL0aa6EYgXVJxnRDtUw
+@url = https://atividade-final.vercel.app
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOGZmMmYwOGM3MWVkYWIyZDc2Mjg4NiIsImlhdCI6MTY3MDM3ODIzOH0.G2D4NeRQCzyeeoMt41dW0t3JQiF1tsn31C7akQT6yn8
 
 // Criar Usuario
 POST {{url}}/usuario/cadastrar
 content-type: application/json
 
 {
-  "email": "emailteste2@gmail.com",
-  "nome": "teste",
-  "senha": "teste"
+  "email": "lucas@gmail.com",
+  "nome": "lucas",
+  "senha": "lucas"
 }
 
 ###
@@ -18,8 +18,8 @@ POST {{url}}/usuario/login
 content-type: application/json
 
 {
-  "email": "emailteste@gmail.com",
-  "senha": "teste"
+  "email": "lucas@gmail.com",
+  "senha": "lucas"
 }
 
 ###
@@ -43,7 +43,7 @@ Authorization: token {{token}}
 ###
 
 // Assinar Petição
-POST {{url}}/peticoes/assinar/638fd31f57430158062722bb
+POST {{url}}/peticoes/assinar/638ff3178c71edab2d762887
 Authorization: token {{token}}
 
 ###
