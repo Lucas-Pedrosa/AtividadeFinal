@@ -1,0 +1,59 @@
+@url = http://localhost:3000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzODQxZDY1NzNlMzY3ZTBlMTdkNjAzMCIsImlhdCI6MTY3MDI3MjM5M30.2iPBZZrbMLy_YVsqCQdgVRmNsL0aa6EYgXVJxnRDtUw
+
+// Criar Usuario
+POST {{url}}/usuario/cadastrar
+content-type: application/json
+
+{
+  "email": "emailteste2@gmail.com",
+  "nome": "teste",
+  "senha": "teste"
+}
+
+###
+
+// Fazer login
+POST {{url}}/usuario/login
+content-type: application/json
+
+{
+  "email": "emailteste@gmail.com",
+  "senha": "teste"
+}
+
+###
+
+// Ver todas as petições
+GET {{url}}/peticoes
+
+###
+
+// Criar petição
+POST {{url}}/peticoes/criar
+Content-Type: application/json
+Authorization: token {{token}}
+
+{
+  "titulo": "titulo peticao 6",
+  "descricao": "descricao peticao 2",
+  "foto": "link peticao 2"
+}
+
+###
+
+// Assinar Petição
+POST {{url}}/peticoes/assinar/638fd31f57430158062722bb
+Authorization: token {{token}}
+
+###
+
+// Excluir Petição
+DELETE {{url}}/peticoes/deletar/638fd34557430158062722bc
+Authorization: token {{token}}
+
+###
+
+// Deletar todas as minhas petições
+DELETE {{url}}/peticoes/deletartudo
+Authorization: token {{token}}
