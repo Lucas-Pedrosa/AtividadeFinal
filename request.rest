@@ -43,7 +43,7 @@ Authorization: token {{token}}
 ###
 
 // Assinar Petição
-POST {{url}}/peticoes/assinar/638ff3178c71edab2d762887
+POST {{url}}/peticoes/assinar/638ff3178c71edab2d762880
 Authorization: token {{token}}
 
 ###
@@ -54,6 +54,6 @@ Authorization: token {{token}}
 
 ###
 
-// Deletar todas as minhas petições
+// Deletar todas as petições do meu usuário
 DELETE {{url}}/peticoes/deletartudo
 Authorization: token {{token}}
