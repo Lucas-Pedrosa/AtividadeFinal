@@ -6,7 +6,7 @@ POST {{url}}/usuario/cadastrar
 content-type: application/json
 
 {
-  "email": "lucas@gmail.com",
+  "email": "lucasteste@gmail.com",
   "nome": "lucas",
   "senha": "lucas"
 }
@@ -18,7 +18,7 @@ POST {{url}}/usuario/login
 content-type: application/json
 
 {
-  "email": "lucas@gmail.com",
+  "email": "lucasteste@gmail.com",
   "senha": "lucas"
 }
 
@@ -49,7 +49,7 @@ Authorization: token {{token}}
 ###
 
 // Excluir Petição
-DELETE {{url}}/peticoes/deletar/638fd34557430158062722bc
+DELETE {{url}}/peticoes/deletar/639216381706474132225532
 Authorization: token {{token}}
 
 ###

@@ -5,7 +5,7 @@ const apiUsuario = '/usuario';
 const apiPeticoes = '/peticoes';
 
 const cadastrar = {
-  "email": "lucas@gmail.com",
+  "email": "lucas2@gmail.com",
   "nome": "lucas",
   "senha": "lucas"
 }
@@ -17,7 +17,7 @@ const cadastrarValidacao = {
 }
 
 const login = {
-  "email": "lucas@gmail.com",
+  "email": "lucasteste@gmail.com",
   "senha": "lucas"
 }
 
@@ -52,7 +52,7 @@ describe('usuario', () => {
 
 })
 
-const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTEyNTVhZDUyN2ExODE2MjM2OTQ5MyIsImlhdCI6MTY3MDQ1OTYyN30.k_4P6mU7FQ2juuoGpdTUd9HQWpuOT6YtabKAY5Ihfwk'
+const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTIxNmZlMmE1ZWJhN2UyZDlkNWQwYiIsImlhdCI6MTY3MDUxODUzM30.-sUVhLfSbbVlUz3bzDWyjZdje-om6Y8VvdsI95dU8TA'
 
 const peticao = {
   "titulo": "titulo peticao 6",
@@ -95,7 +95,7 @@ describe('peticoes', () => {
 
     describe('deletar peticao', () => {
       it('should return 200', async () => {
-        await supertest(app).delete(`${apiPeticoes}/deletar/6390a4def833d324550b3a20`).set('Authorization', `token ${token}`).expect(200)
+        await supertest(app).delete(`${apiPeticoes}/deletar/639216381706474132225532`).set('Authorization', `token ${token}`).expect(200)
       })
 
       it('should return 400', async () => {
